@@ -44,8 +44,26 @@
 
 .App-intro {
   font-size: large;
-<<<<<<< HEAD
 }
-=======
+
+.newMemeButton {
+  background: darkblue;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding:10px;
 }
->>>>>>> 56fa2556114135fb58176604371dc4e1be340314
+
+/*.tile {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  background: lightyellow;
+  float: left;
+  font-size: 11px;
+  text-align: left;
+}*/
+
