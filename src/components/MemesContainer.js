@@ -10,18 +10,25 @@ class MemesContainer extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost3001/api/memes.json')
+    axios.get('http://localhost:3001/api/memes')
     .then(response => {
       console.log(response)
       this.setState({memes: response.data})
     })
     .catch(error => console.log(error))
   }
-  
+
   render() {
     return(
       <div>
-        <h1>Memes </h1>
+        {this.state.memes.map((meme) => {
+          return(
+            <div key={meme.id}> 
+            <h4>{meme.top_text}</h4>
+            <img src={meme.img} />
+            <h4>{meme.bottom_text}</h4>
+            </div>)
+        })}
       </div>
       ) 
   }
