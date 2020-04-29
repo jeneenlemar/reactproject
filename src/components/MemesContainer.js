@@ -25,14 +25,14 @@ class MemesContainer extends React.Component {
       'http://localhost:3001/api/memes',
       { meme:
         {
-          top_text: '',
-          img: '', 
-          bottom_text: ''
+          top_text: 't',
+          img: 'i', 
+          bottom_text: 'b'
         }
       }
     )
     .then(response => {
-      console.log(response)
+      console.log(response.data)
     })
     .catch(error => console.log(error))
   }
